@@ -1,8 +1,66 @@
-#root {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 25px;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  background: linear-gradient(45deg, #100a17, #1c383c) !important;
+  font-family: "Roboto Condensed", serif !important;
+  color: #b2f7ef !important;
+}
+
+* {
+  background: none !important;
+  color: inherit !important;
+}
+
+.custom-toggle .navbar-toggler-icon {
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3E%3Cpath fill="%23ffffff" d="M0 6h30v3H0zm0 7h30v3H0zm0 7h30v3H0z"/%3E%3C/svg%3E') !important;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  opacity: 0.9;
+  border: none !important;
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon {
+  transform: rotate(0deg);
+  opacity: 1;
+}
+
+.navbar-collapse.collapse {
+  display: none;
+}
+
+.navbar-collapse {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0s 0.5s;
+}
+
+.navbar-collapse.show {
+  display: block;
+  opacity: 1;
+}
+
+.navbar-collapse {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0s 0.5s;
+}
+
+.navbar-collapse.show {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease, visibility 0s 0s;
+}
+
+@media (min-width: 992px) {
+  .navbar-collapse {
+    display: flex !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
+
+.hover-overlay:hover {
+  border-color: rgba(37, 97, 158, 0.689) !important;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  transition: border-color 0.9s;
 }
