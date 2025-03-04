@@ -1,66 +1,92 @@
-body {
-  background: linear-gradient(45deg, #100a17, #1c383c) !important;
-  font-family: "Roboto Condensed", serif !important;
-  color: #b2f7ef !important;
-}
-
 * {
   background: none !important;
   color: inherit !important;
 }
 
+body {
+  background: linear-gradient(45deg, #100a17, #1c383c) !important;
+  font-family: "Roboto Condensed", serif !important;
+  color: #b2f7ef !important;
+  transform: scale(0.85) !important;
+  transform-origin: top center !important;
+  margin-top: 10px !important;
+}
+
 .custom-toggle .navbar-toggler-icon {
   background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3E%3Cpath fill="%23ffffff" d="M0 6h30v3H0zm0 7h30v3H0zm0 7h30v3H0z"/%3E%3C/svg%3E') !important;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  transition: transform 0.2s ease, opacity 0.2s ease !important;
 }
 
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
-  opacity: 0.9;
+  opacity: 0.9 !important;
   border: none !important;
 }
 
 .navbar-toggler.collapsed .navbar-toggler-icon {
-  transform: rotate(0deg);
-  opacity: 1;
+  transform: rotate(0deg) !important;
+  opacity: 1 !important;
 }
 
 .navbar-collapse.collapse {
-  display: none;
+  display: none !important;
 }
 
 .navbar-collapse {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease, visibility 0s 0.5s;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition: opacity 0.5s ease, visibility 0s 0.5s !important;
 }
 
 .navbar-collapse.show {
-  display: block;
-  opacity: 1;
+  display: block !important;
+  opacity: 1 !important;
 }
 
 .navbar-collapse {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease, visibility 0s 0.5s;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition: opacity 0.5s ease, visibility 0s 0.5s !important;
 }
 
 .navbar-collapse.show {
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.5s ease, visibility 0s 0s;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transition: opacity 0.5s ease, visibility 0s 0s !important;
 }
 
 @media (min-width: 992px) {
   .navbar-collapse {
-    display: flex !important;
-    opacity: 1 !important;
-    visibility: visible !important;
+    display: flex !important ;
+    opacity: 1 !important ;
+    visibility: visible !important ;
   }
 }
 
-.hover-overlay:hover {
-  border-color: rgba(37, 97, 158, 0.689) !important;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-  transition: border-color 0.9s;
+/* animation button */
+.contact-btn {
+  width: 150px !important;
+  text-align: center !important;
+  border: 2px solid black !important;
+  border-radius: 10px !important;
+  padding: 10px !important;
+  transition: box-shadow 0.9s !important;
+  animation: borderPulse 4s infinite alternate !important;
+}
+
+/* Hover effect for shadow */
+.contact-btn:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Border color animation */
+@keyframes borderPulse {
+  0% {
+    border-color: black !important;
+  }
+  50% {
+    border-color: rgba(37, 97, 158, 0.689) !important;
+  }
+  100% {
+    border-color: black !important;
+  }
 }

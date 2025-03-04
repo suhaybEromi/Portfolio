@@ -24,19 +24,59 @@ export default function CustomNavbar() {
                   <p className="fs-4 mt-2 ms-2 me-3">#Home</p>
                 </Link>
 
-                <Link to="/projects" className="text-decoration-none">
+                <Link
+                  to="/project"
+                  className="text-decoration-none"
+                  onClick={e => {
+                    e.preventDefault();
+                    document.getElementById("project").scrollIntoView({
+                      behavior: "smooth",
+                      block: "start", // Makes sure it aligns properly
+                    });
+                  }}
+                >
                   <p className="fs-4 mt-2 ms-2 me-3">#Projects</p>
                 </Link>
 
-                <Link to="/skills" className="text-decoration-none">
+                <Link
+                  to="/skill"
+                  className="text-decoration-none"
+                  onClick={e => {
+                    e.preventDefault();
+                    document.getElementById("skill").scrollIntoView({
+                      behavior: "smooth",
+                      block: "start",
+                    });
+                  }}
+                >
                   <p className="fs-4 mt-2 ms-2 me-3">#Skills</p>
                 </Link>
 
-                <Link to="/about" className="text-decoration-none">
+                <Link
+                  to="/about"
+                  className="text-decoration-none"
+                  onClick={e => {
+                    e.preventDefault();
+                    document.getElementById("about").scrollIntoView({
+                      behavior: "smooth",
+                      block: "start",
+                    });
+                  }}
+                >
                   <p className="fs-4 mt-2 ms-2 me-3">#About</p>
                 </Link>
 
-                <Link to="/contact" className="text-decoration-none">
+                <Link
+                  to="/contact"
+                  className="text-decoration-none"
+                  onClick={e => {
+                    e.preventDefault();
+                    document.getElementById("contact").scrollIntoView({
+                      behavior: "smooth",
+                      block: "start",
+                    });
+                  }}
+                >
                   <p className="fs-4 mt-2 ms-2 me-3">#Contact</p>
                 </Link>
               </Nav>
