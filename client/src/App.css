@@ -64,29 +64,31 @@ body {
 
 /* animation button */
 .contact-btn {
-  width: 150px !important;
-  text-align: center !important;
-  border: 2px solid black !important;
-  border-radius: 10px !important;
-  padding: 10px !important;
-  transition: box-shadow 0.9s !important;
-  animation: borderPulse 4s infinite alternate !important;
+  width: 150px;
+  text-align: center;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  padding: 10px;
+  transition: box-shadow 0.9s;
+  animation: borderPulse 4s infinite alternate;
 }
 
 /* Hover effect for shadow */
 .contact-btn:hover {
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2) !important;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Border color animation */
 @keyframes borderPulse {
   0% {
-    border-color: black !important;
+    border-color: black;
   }
   50% {
-    border-color: rgba(37, 97, 158, 0.689) !important;
+    border-color: rgba(37, 97, 158, 0.689);
   }
   100% {
-    border-color: black !important;
+    border-color: black;
   }
 }

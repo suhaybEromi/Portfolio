@@ -12,7 +12,6 @@ export default function Project() {
       description: "This is the first project description.",
       image: cvImage,
       website: "#",
-      github: "#",
     },
     {
       id: 2,
@@ -20,7 +19,6 @@ export default function Project() {
       description: "This is the second project description.",
       image: cvImage,
       website: "#",
-      github: "#",
     },
   ];
 
@@ -77,19 +75,6 @@ export default function Project() {
                           to={project.website}
                         >
                           WEBSITE
-                        </Link>
-                      </button>
-                    </div>
-
-                    {/* GitHub Button */}
-                    <div className="border rounded-3 ms-3">
-                      <button className="btn d-flex align-items-center px-3">
-                        <FaGithub className="fs-4 me-2" />
-                        <Link
-                          to={project.github}
-                          className="text-decoration-none"
-                        >
-                          GITHUB
                         </Link>
                       </button>
                     </div>

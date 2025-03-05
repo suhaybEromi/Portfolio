@@ -2,6 +2,8 @@ import { Col, Container, Row } from "react-bootstrap";
 import cvImage from "../assets/img/cv.png";
 import { Link } from "react-router-dom";
 import Project from "./Project";
+import Skill from "./Skill";
+import About from "./About";
 
 export default function Home() {
   return (
@@ -55,18 +57,33 @@ export default function Home() {
         </Container>
       </section>
 
-      {/* Project */}
+      {/* Project Page */}
 
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <br />
       <br />
       <br />
       <section id="project">
         <Project />
+      </section>
+
+      {/* Skill Page */}
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <section id="skill">
+        <Skill />
+      </section>
+
+      {/* About Me */}
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <section id="about">
+        <About />
       </section>
     </>
   );
