@@ -1,7 +1,6 @@
 import { Col, Container, Row, Card, InputGroup } from "react-bootstrap";
 import cvImage from "../assets/img/cv.png";
 import websiteImage from "../assets/img/website.png";
-import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function Project() {
@@ -23,7 +22,7 @@ export default function Project() {
   ];
 
   return (
-    <div className="mt-5 mb-2">
+    <div style={{ marginTop: "120px", marginBottom: "50px" }}>
       <Container>
         <Row className="align-items-center">
           <Col xxl="8" xl="8" lg="8" md="12">
@@ -51,7 +50,7 @@ export default function Project() {
                     <Card.Img
                       src={project.image}
                       className="img-fluid"
-                      style={{ width: "70%", height: "auto" }}
+                      style={{ width: "60%", height: "auto" }}
                     />
                   </div>
                   <hr />

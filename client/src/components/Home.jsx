@@ -4,14 +4,15 @@ import { Link } from "react-router-dom";
 import Project from "./Project";
 import Skill from "./Skill";
 import About from "./About";
+import Contact from "./Contact";
 
 export default function Home() {
   return (
     <>
-      <section id="home">
+      <section id="home" className="py-5">
         <Container>
           <Row className="d-flex align-items-center justify-content-center">
-            <Col xxl="6" xl="7" lg="7" md="12" className=" text-xxl-start">
+            <Col xxl="6" xl="7" lg="7" md="12" className="text-xxl-start">
               <p className="fs-2">
                 Suhayb is a
                 <span className="ms-2 me-2 text-primary">
@@ -22,9 +23,8 @@ export default function Home() {
               <p className="fs-3 text-white-50">
                 Entrust web application development to me.
               </p>
-              <br />
 
-              <div className="contact-btn">
+              <div className="contact-btn mt-3">
                 <Link
                   to="/contact"
                   className="text-decoration-none"
@@ -39,51 +39,33 @@ export default function Home() {
                   <h4>Contact Me</h4>
                 </Link>
               </div>
-
-              <br />
             </Col>
-            <Col xxl="1" xl="1" lg="1" md="12"></Col>
 
             <Col xxl="5" xl="4" lg="4" md="12" className="text-center">
               <img src={cvImage} width="400px" className="img-fluid" />
             </Col>
-
-            <div className="text-start border border-2 rounded-3 p-4 mt-5 mb-5 w-75">
-              <Col xxl="12">
-                <h1>Success doesn’t come to you - you go to it.</h1>
-              </Col>
-            </div>
           </Row>
         </Container>
       </section>
 
       {/* Project Page */}
-
-      <br />
-      <br />
-      <br />
-      <section id="project">
+      <section id="project" className="py-5">
         <Project />
       </section>
 
       {/* Skill Page */}
-
-      <br />
-      <br />
-      <br />
-      <br />
-      <section id="skill">
+      <section id="skill" className="py-5">
         <Skill />
       </section>
 
       {/* About Me */}
-
-      <br />
-      <br />
-      <br />
-      <br />
-      <section id="about">
+      <section id="about" className="py-5">
         <About />
+      </section>
+
+      {/* Contact */}
+      <section id="contact" className="pt-5">
+        <Contact />
       </section>
     </>
   );

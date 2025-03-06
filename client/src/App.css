@@ -7,7 +7,7 @@ body {
   background: linear-gradient(45deg, #100a17, #1c383c) !important;
   font-family: "Roboto Condensed", serif !important;
   color: #b2f7ef !important;
-  transform: scale(0.85) !important;
+  transform: scale(0.9) !important;
   transform-origin: top center !important;
   margin-top: 10px !important;
 }
@@ -64,13 +64,12 @@ body {
 
 /* animation button */
 .contact-btn {
-  width: 150px;
+  width: 160px;
   text-align: center;
   border-width: 2px;
   border-style: solid;
   border-color: black;
-  border-radius: 10px;
-  padding: 10px;
+  padding: 6px;
   transition: box-shadow 0.9s;
   animation: borderPulse 4s infinite alternate;
 }
