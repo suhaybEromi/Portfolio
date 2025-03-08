@@ -48,25 +48,25 @@ export default function Home() {
         </Container>
       </section>
 
-      {/* Project Page */}
-      <section id="project" className="py-5">
+ {/* Project Page */}
+      <div>
         <Project />
-      </section>
+      </div>
 
       {/* Skill Page */}
-      <section id="skill" className="py-5">
+      <div>
         <Skill />
-      </section>
+      </div>
 
       {/* About Me */}
-      <section id="about" className="py-5">
+      <div>
         <About />
-      </section>
+      </div>
 
       {/* Contact */}
-      <section id="contact" className="pt-5">
+      <div>
         <Contact />
-      </section>
+      </div>
     </>
   );
 }
